@@ -1,0 +1,21 @@
+version: '3'
+services:
+  user-service:
+    build: ./user
+    ports:
+      - '5001:5001'
+
+  book-service:
+    build: ./book
+    ports:
+      - '5002:5002'
+
+  order-service:
+    build: ./order
+    ports:
+      - '5003:5003'
+
+  payment-service:
+    build: ./payment
+    ports:
+      - '5004:5004'
